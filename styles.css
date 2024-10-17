@@ -1,0 +1,160 @@
+
+
+* {
+    border: red 2px solid;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+li {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 2vw;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: inline-grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+    gap: 0px;
+}
+
+.sidebar {
+    background-color: rgb(27, 138, 250);
+    grid-area: 1 / 1 / 3 / 2;
+    display: grid;
+    grid-template-rows: 1fr 2fr 3fr;
+    padding-left: 2vw;
+    padding-right: 5vw;
+}
+
+.sidebar>.header {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 1vw;
+}
+
+.dash-logo, .dash-text{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+}
+
+.dash-logo{
+    height: 3rem;
+    width: 3rem;
+    fill: white;
+}
+
+.logos {
+    height: 2rem;
+    width: 2rem;
+    fill: white;
+}
+
+.setting {
+    padding-top: 5vh;
+}
+
+.nav {
+    background-color: rgb(255, 255, 255);
+    grid-area: 1 / 2 / 2 / 3;
+    box-shadow: 2px 0px 10px black;
+    margin-bottom: 5px;
+    display: inline-grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.search .logos {
+    fill: black;
+    margin-left: 3vw;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+}
+
+.searchbar {
+    background-color: rgb(213, 211, 211);
+    border-radius: 30px;
+    margin-right: 1vw;
+}
+
+.welcome {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 2vw;
+    padding-left: 3vw;
+}
+
+.pfp .logos {
+    fill: rgb(75, 75, 75);
+}
+
+.pfp {
+    background-color: rgb(197, 195, 195);
+    border-radius: 100%;
+    width: 5vw;
+    height: 7.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-text .hello {
+    font-size: small;
+}
+
+.welcome-text .account {
+    font-size: large;
+    font-weight: 900;
+}
+
+.account .logos {
+    fill: black;
+}
+
+.account {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 3vw;
+    gap: 2vw;
+}
+
+.account-text {
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    background-color: rgb(203, 203, 203);
+    grid-area: 2 / 2 / 3 / 3;
+}
