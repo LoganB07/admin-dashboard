@@ -1,7 +1,6 @@
 
 
 * {
-    border: red 2px solid;
     padding: 0;
     margin: 0;
 }
@@ -28,6 +27,18 @@ li {
     justify-content: left;
     align-items: center;
     gap: 2vw;
+}
+
+button {
+    background-color: rgb(0, 95, 204);
+    color: white;
+    border-radius: 30px;
+    padding: 1vh 1vw;
+}
+
+hr {
+    border: solid 1px black;
+    margin: auto 2vw;
 }
 
 .container {
@@ -154,7 +165,120 @@ li {
     align-items: center;
 }
 
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
 .content {
     background-color: rgb(203, 203, 203);
     grid-area: 2 / 2 / 3 / 3;
+    display: inline-grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr 4fr;
+    gap: 0.5vh;
+    padding-right: 2vw;
+}
+
+.project-header {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    padding-left: 2vw;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.announcement-header {
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.projects {
+    grid-area: 2 / 1 / 5 / 2;
+    display: inline-grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 3vw));
+    gap: 1vw;
+    padding-left: 2vw;;
+}
+
+.announcements {
+    grid-area: 2 / 2 / 3 / 3;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 5px 5px black;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    padding: 1vh 1vw;
+}
+
+.announcements .title {
+    font-size: 1.05rem;
+}
+
+.trending-header {
+    grid-area: 3 / 2 / 4 / 3;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.trending {
+    grid-area: 4 / 2 / 5 / 3;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 5px 5px black;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    padding-left: 1vw;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 5px 5px black;
+    border-left: solid goldenrod 5px;
+    padding: 2vh 1vw;
+    gap: 1vh;
+}
+
+.card .text {
+    align-self: start;
+    padding-right: 1vw;
+}
+
+.title {
+    font-weight: 900;
+    font-size: 1.2rem;
+    padding-bottom: 1vh;
+}
+
+.symbols {
+    align-self: end;
+}
+
+.card .logos {
+    fill: black;
+    padding: 0 0.5vw;
+}
+
+.trending .account {
+    display: flex;
+    flex-direction: row;
+}
+
+.profile {
+    flex: 1;
 }
